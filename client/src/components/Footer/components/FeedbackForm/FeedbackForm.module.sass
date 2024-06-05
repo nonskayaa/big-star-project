@@ -1,0 +1,92 @@
+@import '../../../../assets/styles/colors'
+
+.feedback_form
+  width: 100%
+
+  display: flex
+  flex-direction: column
+
+  &__title
+    color: $accent-purple
+
+  &__subtitle
+    color: $accent-purple
+
+    margin-right: 15px
+
+
+  &__text_container
+    display: flex
+    align-items: center
+
+  &__input
+    width: 100%
+    height: 60px    
+
+    
+    padding: 15px
+
+    margin-top: 15px
+
+    // border: 2px solid $accent-purple
+    border: none
+    border-radius: 20px
+
+    background-color: #eaeff8
+    outline: none
+
+  
+
+  textarea
+
+    resize: none
+    overflow: auto
+
+    height: 150px
+    
+
+  &__btn
+    width: 100%
+    height: 60px
+
+    background-color: $accent-purple  
+
+    border: none
+    border-radius: 25px
+
+    padding: 20px 25px
+    margin-top: 20px
+
+    font-weight: 700
+
+    text-transform: uppercase
+    color: white
+
+    cursor: pointer
+
+  &__policy_text
+    
+    margin-top: 15px
+    font-size: 12px
+    a
+      color: $accent-purple
+      text-decoration: none
+
+.error
+  border: 2px solid #db1717
+
+  &_message
+    margin: 5px 0px 0px 5px
+    color:  #db1717
+
+    font-size: 12px
+    font-weight: 600
+  
+
+@media screen and (max-height: 768px) 
+  .feedback_form
+    &__input
+      height: 30px    
+      margin-top: 10px
+
+    

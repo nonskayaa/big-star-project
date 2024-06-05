@@ -1,0 +1,88 @@
+@import '../../../../assets/styles/fontsize'
+@import '../../../../assets/styles/colors'
+
+  
+.product
+  &__info_container
+    width: 50%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  &__title
+    position: absolute
+    z-index: 2
+
+    font-size: $main-title-size
+    color: white
+
+    text-transform: uppercase
+
+  &__title_wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+  &__ingredients
+
+    &_container
+      margin-top: 40px
+
+      display: flex
+      flex-direction: column
+
+      align-items: flex-start
+
+    &_subtitle
+      display: inline
+
+      padding:  5px 30px 
+
+      font-size: clamp(16px, 3vw, 50px)
+      font-weight: 700
+
+      color: $accent-purple
+
+      background-color: white
+      border-radius: 40px
+
+      text-transform: uppercase
+
+    &_text
+      margin-top: 20px
+
+      font-size: clamp(14px, 1.5vw, 16px)
+
+      color: $accent-purple
+
+.graffiti_background
+  width: clamp(320px, 100vw, 1200px)
+  
+  margin-top: 30px
+
+  margin-left: -40px
+
+@media screen and (min-width: 280px) and (max-width: 1024px)
+  .product
+    &__info_container
+      width: 90%
+
+    &__title
+      margin-top: 30px
+
+    &__ingredients
+
+      &_container
+        margin-top: 20px
+
+      &_subtitle
+        padding: 5px 15px
+
+
+@media screen and (min-width: 768px) and (max-height: 768px)
+  .product
+    &__ingredients
+
+      &_container
+        margin-top: 20px
+

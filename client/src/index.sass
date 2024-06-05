@@ -1,0 +1,51 @@
+@import "../node_modules/normalize.css"
+@import './assets/styles/colors'
+
+@font-face 
+  font-family: 'Aileron'
+  src: url('./assets/fonts/Aileron-Bold.otf') 
+  font-weight: 600
+
+@font-face 
+  font-family: 'Montserrat'
+  src: url('./assets/fonts/Montserrat-Regular.ttf') 
+  font-weight: 400
+
+@font-face 
+  font-family: 'Montserrat'
+  src: url('./assets/fonts/Montserrat-SemiBold.ttf') 
+  font-weight: 600
+
+@font-face 
+  font-family: 'Montserrat'
+  src: url('./assets/fonts/Montserrat-Bold.ttf') 
+  font-weight: 700
+
+body
+  font-family: 'Montserrat'
+  font-weight: 400
+
+*
+  box-sizing: border-box
+
+h1,h2,h3,h4,h5,h6,p,li,ul
+  margin: 0
+  padding: 0
+
+.swiper-pagination-bullet-active 
+  background-color: $accent-purple !important
+
+.swiper-3d .swiper-slide-shadow
+  background: none !important
+
+.swiper-slide
+  display: flex !important
+  align-items: center !important
+  justify-content: center !important
+
+  overflow: visible
+
+.swiper-free-mode > .swiper-wrapper 
+  -webkit-transition-timing-function: linear
+  -o-transition-timing-function: linear
+  transition-timing-function: linear

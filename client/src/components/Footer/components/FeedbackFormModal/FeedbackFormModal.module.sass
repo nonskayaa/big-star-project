@@ -1,0 +1,60 @@
+@import '../../../../assets/styles/colors'
+
+.feedback_form_modal
+  
+  &__container
+    width: 40vw
+    height: 100vh
+
+    padding: 60px
+
+    display: flex
+    flex-direction: column
+
+    justify-content: flex-start
+
+    background-color: white
+
+    border-radius: 80px 0px 0px 0px
+
+  &__close_btn
+
+    position: absolute
+
+    top: 20px 
+    right: 20px
+
+    background: none
+    
+
+
+    padding: 5px 15px
+
+    font-weight: 600
+
+    cursor: pointer
+
+
+
+
+@media screen and (max-width: 1024px) 
+  .feedback_form_modal
+  
+    &__container
+      width: 70vw
+      padding: 60px 40px
+
+@media screen and (max-width: 768px) 
+  .feedback_form_modal
+  
+    &__container
+      width: 100vw
+      padding: 60px 30px 
+
+
+@media screen and (max-height: 768px) 
+  .feedback_form_modal
+  
+    &__container
+      padding: 60px 30px 
+

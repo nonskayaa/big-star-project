@@ -1,0 +1,53 @@
+@import '../../../../../assets/styles/colors'
+  
+.product
+   &__nutrition_facts
+
+    &_container
+      margin-top: 40px
+      width: 100%
+
+    &_subtitle
+      font-size: clamp(16px, 3vw, 50px)
+
+      display: inline
+
+      padding:  5px 30px 
+
+      font-weight: 700
+
+      color: $accent-purple
+
+      background-color: white
+      border-radius: 40px
+
+      text-transform: uppercase
+
+    &_wrapper
+      width: 100%
+      margin-top: 50px
+
+      display: flex
+      justify-content: space-evenly
+
+
+@media screen and (min-width: 280px) and (max-width: 1024px)
+
+  .product
+    &__nutrition_facts
+
+      &_subtitle
+        padding: 5px 15px
+
+      &_wrapper
+        margin-top: 25px
+
+@media screen and (min-width: 768px) and (max-height: 768px)
+  .product
+    &__nutrition_facts
+      &_container
+        margin-top: 20px
+
+      &_wrapper
+        margin-top: 20px
+

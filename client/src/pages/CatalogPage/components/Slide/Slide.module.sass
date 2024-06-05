@@ -1,0 +1,81 @@
+@import '../../../../assets/styles/colors'
+
+.slide
+  &_container
+    height: 100%
+    width: 100%
+
+    display: flex
+    flex-direction: column
+
+    align-items: center
+    justify-content: center
+
+
+  &__content_container
+    position: absolute
+    z-index: 2
+    height: 100%
+    width: 100%
+
+    display: flex
+    flex-direction: column
+
+    align-items: center
+    justify-content: center
+
+
+.flavor_title
+  font-family: "Aileron"
+  font-weight: 700
+
+  font-size: clamp(25px, 11vw, 180px)
+  
+
+  color: white
+
+.flavor_text
+  text-align: left
+  margin-top: 80px
+  width: 720px
+
+  font-size: 14px
+
+  font-weight: 300
+  text-transform: uppercase
+
+  color: white
+
+.bar_image
+  max-width: 800px
+  width: 90vw
+
+  // margin-top: 15px
+
+  transform: rotate(-5deg)
+
+.banana
+  background: rgb(246,240,182)
+  background: $banana-radial-gradient
+
+.cranberry
+  background: #FFB2CE
+  background: $cranberry-radial-gradient
+
+.strawberry
+  background: #BEFFD8
+  background: $strawberry-radial-gradient
+
+.salt-caramel
+  background: rgb(191,228,233)
+  background: radial-gradient(circle, rgba(191,228,233,1) 0%, rgba(140,207,214,1) 100%)
+  
+@media screen and (min-width: 1024px)
+  .bar_image
+    margin-top: -50px
+
+  .flavor_title
+    letter-spacing: -12px
+
+
+  

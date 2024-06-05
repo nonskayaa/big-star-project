@@ -1,0 +1,102 @@
+.fruits_background
+  &__container
+    width: 100%
+    height: 100%
+
+
+  &__blurred_strawberry_top_left
+    width: 380px
+
+    position: absolute
+
+    top: 60px
+    left: -20px
+
+
+
+  &__blurred_strawberry_top_right
+    width: 350px
+
+    position: absolute
+
+    top: -100px
+    right: 0px
+  
+  &__blurred_strawberry_bottom_left
+    width: 420px
+    position: absolute
+
+    left: 200px
+    bottom: -100px
+  
+
+  &__blurred_strawberry_bottom_right
+    width: 520px
+    position: absolute
+
+    right: -100px
+    bottom: -200px
+  
+  &__strawberry
+    position: absolute
+
+    width: 340px
+
+    top: 380px
+    left: 240px
+
+
+
+  &__strawberry_with_leaf
+    position: absolute
+
+    width: 340px
+
+    top: 380px
+    right: 240px
+
+
+@media screen and (max-width: 1024px) 
+  .fruits_background
+    &__strawberry
+      display: none
+
+    
+    &__strawberry_with_leaf
+      display: none
+
+@media screen and (max-width: 768px) 
+  .fruits_background
+    &__blurred_strawberry_top_left
+      width: 240px
+
+
+      top: 0px
+      left: -70px
+
+
+
+    &__blurred_strawberry_top_right
+      width: 320px
+
+      position: absolute
+
+      top: -100px
+      right: -100px
+    
+    &__blurred_strawberry_bottom_left
+      width: 240px
+      position: absolute
+
+      left: 0px
+      bottom: 35px
+    
+
+    &__blurred_strawberry_bottom_right
+      width: 300px
+      position: absolute
+
+      right: -80px
+      bottom: -80px
+    
+

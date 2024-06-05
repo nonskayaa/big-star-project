@@ -1,0 +1,28 @@
+@import '../../../../../../assets/styles/colors'
+  
+.product
+  &__nutrition_facts
+    &_item
+      width: 25%
+      display: flex
+      flex-direction: column
+
+      align-items: center
+
+      border-right: 2px solid $accent-purple
+
+      &:nth-last-child(1)
+        border-right: none
+        
+
+    &_count
+      font-size: clamp(16px, 3vw, 40px)
+      font-weight: 700
+
+      color: $accent-purple
+    
+    &_name
+      font-size: clamp(14px, 2vw, 16px)
+      font-weight: 600
+
+      color: $accent-purple

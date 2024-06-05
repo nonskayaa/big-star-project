@@ -1,0 +1,65 @@
+@import '../../../../assets/styles/colors'
+
+.info_block
+
+  &__container
+    margin-top: 40px
+
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    flex-direction: row
+
+    &:nth-child(2n) 
+      flex-direction: row-reverse
+      justify-content: space-evenly
+
+
+    &:nth-child(1) 
+      align-items: flex-end
+
+
+  
+  &__text_container
+    width: 40%
+
+    display: flex
+    flex-direction: column
+
+    margin-left: 20px
+
+
+  &__content
+    width: 30%    
+
+
+  &__title
+
+    font-size: clamp(18px, 3vw, 80px)
+
+    color: $accent-purple
+    text-transform: uppercase
+
+    text-decoration: underline
+    text-decoration-style: wavy
+    text-underline-offset: 9px
+    text-decoration-thickness: 4px
+
+  &__text
+    font-size: clamp(14px, 2vw, 30px)
+  
+    color: $accent-purple
+
+    margin-top: 15px
+    
+
+@media screen and (max-width: 768px)
+  .info_block
+    &__content
+      width: 40%
+
+    &__title
+      text-underline-offset: 4px
+      text-decoration-thickness: 2px
+
+

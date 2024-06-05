@@ -1,0 +1,45 @@
+@import '../../assets/styles/colors'
+  
+.not_found_page
+  &__container
+    display: flex
+    flex-direction: column
+
+    align-items: flex-start
+    justify-content: center
+
+    width: 100vw
+    height: 95vh
+
+    padding: 120px 40px
+    background: rgb(245,209,21)
+    background: $yellow-linear-gradient-background
+
+  &__title
+      font-size: clamp(40px, 4vw, 120px)
+      color: white
+
+      text-transform: uppercase
+
+    
+  &__subtitle
+    font-size: clamp(25px, 2vw, 80px)
+    color: white
+
+    font-weight: 600
+
+    margin-top: 20px
+
+  &__link
+    text-decoration: none
+    color: $accent-purple
+
+    font-weight: 600
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px)
+  .not_found_page
+    &__container
+      height: 70vh
+
+    

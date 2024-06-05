@@ -1,0 +1,86 @@
+@import '../../assets/styles/colors'
+@import '../../assets/styles/fontsize'
+
+.promotions
+
+  &_page__container
+    display: flex
+    flex-direction: column
+
+    align-items: center
+
+    
+
+  &_section__container
+    padding: 160px 0px 40px 0px
+    width: 100%
+
+    display: flex
+    flex-direction: column
+
+    align-items: flex-start
+    justify-content: center
+    
+    background: rgb(245,209,21)
+    background: $yellow-linear-gradient-background
+
+    border-radius: 0px 0px 50px 50px
+
+
+  &__title
+    font-weight: 700
+    font-size: clamp(40px, 5vw, 80px)
+    
+    margin-left: 40px
+
+    color: white
+    text-transform: uppercase
+
+  
+  &__container
+    width: 100%
+    
+    display: flex
+
+
+.newsletter_section
+  &__container
+    width: 100%
+
+    display: flex
+    flex-direction: column
+
+    align-items: center
+    justify-content: center
+
+    padding:  60px 0px
+
+    // border-top: 2px solid $accent-purple
+    // border-bottom: 2px solid $accent-purple
+
+    // border-radius: 50px
+
+
+
+@media screen and (max-width: 520px)
+  .promotions
+    &_section__container
+      padding: 90px 0px
+
+// @media screen and (min-width: 420px) and (max-width: 1024px)
+//   .promotions
+//     &_page__container
+//       height: 80vh
+//       align-items: center
+//       margin: 0
+
+// @media screen and (max-width: 419px)
+//   .promotions
+//     &_page__container
+//       max-height: 720px
+
+
+// @media screen and (min-height: 1024px)
+//   .promotions
+//     &_page__container
+//       height: 70vh

@@ -1,0 +1,139 @@
+.fruits_background
+  &__container
+    width: 100%
+    height: 100%
+
+    position: absolute
+    z-index: 1
+
+
+  &__blurred_banana
+    
+    &_left
+      width: 190px
+
+      position: absolute
+
+      left: 200px
+
+    &_right
+      width: 170px
+      
+      position: absolute
+
+      top: 200px
+      right: 0px
+    
+
+    &_bottom_right
+      width: 150px
+      position: absolute
+
+      right: 90px
+      bottom: 100px
+
+      transform: rotate(30deg)
+
+    &_bottom_left
+      width: 220px
+
+      position: absolute
+
+      left: 30px
+      bottom: 20px
+
+      transform: rotate(-30deg)
+
+  &__blurred_leaf
+      position: absolute
+
+      top: 350px
+      left: -150px
+
+  &__leaves
+      width: 420px
+
+      position: absolute
+      
+
+      top: 200px
+      left: 160px
+      
+  &__bananas
+    width: 620px
+    position: absolute
+    top: 340px
+    left: 130px
+     
+  &__leaf
+    width: 280px
+
+    position: absolute
+
+    right: 280px
+    top: 220px
+
+  &__banana
+    width: 420px
+
+    position: absolute
+
+    right: 220px
+    top: 340px
+
+  
+
+@media screen and (max-width: 1024px) 
+  .fruits_background
+    &__bananas
+      display: none
+
+    &__banana
+      display: none
+    
+    &__leaves
+      display: none
+    
+    &__leaf
+      display: none
+
+    &__blurred_leaf
+      display: none
+
+@media screen and (max-width: 768px) 
+  .fruits_background
+    &__blurred_banana
+      
+      &_left
+        width: 170px
+
+        top: 20px
+        left: 0px
+
+      &_right
+        width: 140px
+        
+        position: absolute
+
+        top: 140px
+        right: -20px
+      
+
+      &_bottom_right
+        width: 130px
+        position: absolute
+
+        right: 20px
+        bottom: 70px
+
+        transform: rotate(30deg)
+
+      &_bottom_left
+        width: 200px
+
+        position: absolute
+
+        left: -30px
+        bottom: 5px
+
+        transform: rotate(-30deg)
